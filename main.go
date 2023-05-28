@@ -6,6 +6,7 @@ import (
     "fmt"
     "os"
     "os/exec"
+    "os/user"
     "strings"
 )
 
@@ -13,8 +14,7 @@ func main() {
     reader := bufio.NewReader(os.Stdin)
 
     for {
-        currentDir, _ := os.Getwd()
-        fmt.Printf("%s> ", currentDir)
+        printPrompt()
         cmdString, err := reader.ReadString('\n')
         if err != nil {
             fmt.Fprintln(os.Stderr, err)
@@ -24,6 +24,14 @@ func main() {
             fmt.Fprintln(os.Stderr, err)
         }
     }
+}
+
+func printPrompt() {
+    currentDir, _ := os.Getwd()
+    dir := strings.Split(currentDir, "/")
+    user, _ := user.Current()
+    host, _ := os.Hostname()
+    fmt.Printf("[%s@%s] in %s> ", user.Username, host, dir[len(dir)-1])
 }
 
 func execInput(input string) error {
