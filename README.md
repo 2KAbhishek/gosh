@@ -20,78 +20,76 @@
 <a href="https://github.com/2KAbhishek/gosh/pulse">
 <img alt="Last Updated" src="https://img.shields.io/github/last-commit/2kabhishek/gosh?style=flat&color=e06c75&label="> </a>
 
-<h3>Short Sweet Headline 🎇🎉</h3>
-
-<figure>
-  <img src="images/screenshot.png" alt="gosh in action">
-  <br/>
-  <figcaption>gosh in action</figcaption>
-</figure>
+<h3>Minimalistic Shell in Go 🐚🐀</h3>
 
 </div>
 
-gosh is a `<utility/tool>` that allows `<target_audience>` to `<action>`.
+gosh is a minimalistic shell alternative written in go.
+
+```bash
+[abhishek@Abhisheks-Mac-mini.local] ls
+LICENSE         README.md       go.mod          images          main.go
+```
 
 ## ✨ Features
 
-- Supports foo
-- Can do bar
-- Works with bazz
+-   Has a full featured prompt
+-   Very easy to modify and enhance
 
 ## Setup
 
 ### ⚡ Requirements
 
-- foo >= bar
-- bazz
+-   go 1.2.0
 
 ### 🚀 Installation
 
 ```bash
 git clone https://github.com/2kabhishek/gosh
 cd gosh
-<install_command>
+go build
+ln -s $PWD/gosh ~/Applications/bin/ # Symlink to a place in your path
 ```
 
 ### 💻 Usage
 
 ```bash
 USAGE:
-    gosh [FLAGS] [OPTIONS]
-Example:
     gosh
 ```
 
 ## What's Next
 
-Planning to add `<feature/module>`.
+May add more shell features in future if I feel like it.
 
 ### ✅ To-Do
 
-- [x] Setup repo
-- [ ] Think real hard
-- [ ] Start typing
+-   [ ] Add more shell functions
+-   [ ] Add history support
+-   [ ] Add support for pipes, sub shells
 
-##  Behind The Code
+## Behind The Code
 
 ### 🌈 Inspiration
 
-gosh was inspired by `<reason/idea>`.
+Wanted to play around with go.
 
 ### 💡 Challenges/Learnings
 
-- The main challenges were `<issue/difficulty>`
-- I learned about `<learning/accomplishment>`
+-   The main challenges were `<issue/difficulty>`
+-   I learned about `<learning/accomplishment>`
 
 ### 🧰 Tooling
 
-- [Dotfiles](https://github.com/2kabhishek/Dotfiles) — Dev Environment
-- [nvim2k](https://github.com/2kabhishek/nvim2k) — Personalized Editor
-- [awesome2k](https://github.com/2kabhishek/awesome2k) — Tiling Window Manager
+-   [Dotfiles](https://github.com/2kabhishek/Dotfiles) — Dev Environment
+-   [nvim2k](https://github.com/2kabhishek/nvim2k) — Personalized Editor
+-   [awesome2k](https://github.com/2kabhishek/awesome2k) — Tiling Window Manager
 
 ### 🔍 More Info
 
-- [similar](https://github.com/2kabhishek/similar) — a related repo
+-   [goldog](https://github.com/2kabhishek/goldog) - lolcat in go
+-   [goatsay](https://github.com/2kabhishek/goatsay) - cowsay in go
+-   [godown](https://github.com/2kabhishek/godown) - download manager in go
 
 <hr>
 
@@ -107,4 +105,3 @@ gosh was inspired by `<reason/idea>`.
 | <a href="https://2kabhishek.github.io/projects" target="_blank">Other Projects </a>
 
 </div>
-
